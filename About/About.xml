@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>BatteriesStuffed</name>
+	<author>Skullywag</author>
+	<targetVersion>Alpha 11</targetVersion>
+	<description>Changes vanilla batteries so that they can be made with stuff.
+  
+                            Storage  Efficiency  Beauty  Fires  Health  Explodes
+Steel battery:          1000      50%         -15       yes     100       yes
+Silver battery:         1000      70%         +5         yes     125       yes
+Gold battery:          2500      80%         +10       yes     150       yes
+Plasteel battery:     1500      90%         -10        no      250        no
+Uranium battery:    2000     100%         -20       no      200        no</description>
+</ModMetaData>

@@ -1,0 +1,5 @@
+C:\Users\mjsku_000\Desktop\RimWorldAlpha11Win\RimWorld834Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+C:\Users\mjsku_000\Desktop\RimWorldAlpha11Win\RimWorld834Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku_000\Desktop\RimWorldAlpha11Win\RimWorld834Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
+C:\Users\mjsku_000\Desktop\RimWorldAlpha11Win\RimWorld834Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+C:\Users\mjsku_000\Desktop\RimWorldAlpha11Win\RimWorld834Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
