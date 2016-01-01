@@ -27,6 +27,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>800</WorkToMake>
@@ -72,6 +73,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
       <WorkToMake>800</WorkToMake>
@@ -104,7 +106,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>SilverBattery</defName>
     <label>silver battery</label>
-    <thingClass>Building_Battery</thingClass>
+    <thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
     <graphicData>
       <texPath>Things/Building/SilverBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -116,6 +118,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>125</MaxHitPoints>
       <WorkToMake>800</WorkToMake>
@@ -148,7 +151,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>GoldBattery</defName>
     <label>gold battery</label>
-    <thingClass>Building_Battery</thingClass>
+    <thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
     <graphicData>
       <texPath>Things/Building/GoldBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -160,6 +163,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <WorkToMake>800</WorkToMake>
@@ -204,6 +208,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToMake>800</WorkToMake>

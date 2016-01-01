@@ -13,3 +13,8 @@ C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\BatteriesStuff
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
 C:\Users\mjsku_000\Desktop\RimWorldAlpha12Win\RimWorld906Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12cWin\RimWorld911Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12cWin\RimWorld911Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12cWin\RimWorld911Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12cWin\RimWorld911Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+C:\Users\mjsku_000\Desktop\RimWorldAlpha12cWin\RimWorld911Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
