@@ -3,6 +3,7 @@
 
   <ThingDef Name="BuildingBase" Abstract="True">
     <category>Building</category>
+    <thingClass>Building</thingClass>
     <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -10,6 +11,14 @@
     <repairEffect>Repair</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
+    <graphicData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -32,7 +41,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>800</WorkToMake>
       <Flammability>1.0</Flammability>
-      <Beauty>-15</Beauty>
+      <Beauty>-18</Beauty>
     </statBases>
     <description>Stores electricity when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when heated or wet.</description>
     <size>(1,2)</size>
@@ -41,15 +50,16 @@
     </building>
     <costList>
       <Steel>50</Steel>
+      <Components>2</Components>
     </costList>
     <comps>
-      <li>
-        <compClass>CompPowerBattery</compClass>
+      <li Class="CompProperties_Battery">
         <storedEnergyMax>1000</storedEnergyMax>
         <efficiency>0.5</efficiency>
         <startElectricalFires>true</startElectricalFires>
         <transmitsPower>true</transmitsPower>
       </li>
+      <li Class="CompProperties_Breakdownable"/>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
@@ -87,15 +97,16 @@
     </building>
     <costList>
       <Plasteel>50</Plasteel>
+      <Components>2</Components>
     </costList>
     <comps>
-      <li>
-        <compClass>CompPowerBattery</compClass>
+      <li Class="CompProperties_Battery">
         <storedEnergyMax>1500</storedEnergyMax>
         <efficiency>0.9</efficiency>
         <startElectricalFires>false</startElectricalFires>
         <transmitsPower>true</transmitsPower>
       </li>
+      <li Class="CompProperties_Breakdownable"/>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
@@ -132,15 +143,16 @@
     </building>
     <costList>
       <Silver>50</Silver>
+      <Components>2</Components>
     </costList>
     <comps>
-      <li>
-        <compClass>CompPowerBattery</compClass>
+      <li Class="CompProperties_Battery">
         <storedEnergyMax>1000</storedEnergyMax>
         <efficiency>0.7</efficiency>
         <startElectricalFires>true</startElectricalFires>
         <transmitsPower>true</transmitsPower>
       </li>
+      <li Class="CompProperties_Breakdownable"/>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
@@ -177,15 +189,16 @@
     </building>
     <costList>
       <Gold>50</Gold>
+      <Components>2</Components>
     </costList>
     <comps>
-      <li>
-        <compClass>CompPowerBattery</compClass>
+      <li Class="CompProperties_Battery">
         <storedEnergyMax>2500</storedEnergyMax>
         <efficiency>0.8</efficiency>
         <startElectricalFires>true</startElectricalFires>
         <transmitsPower>true</transmitsPower>
       </li>
+      <li Class="CompProperties_Breakdownable"/>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
@@ -222,15 +235,16 @@
     </building>
     <costList>
       <Uranium>50</Uranium>
+      <Components>2</Components>
     </costList>
     <comps>
-      <li>
-        <compClass>CompPowerBattery</compClass>
+      <li Class="CompProperties_Battery">
         <storedEnergyMax>2000</storedEnergyMax>
         <efficiency>1.0</efficiency>
         <startElectricalFires>false</startElectricalFires>
         <transmitsPower>true</transmitsPower>
       </li>
+      <li Class="CompProperties_Breakdownable"/>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Power</designationCategory>
