@@ -38,3 +38,13 @@ C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\BatteriesStuffed\
 C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
 C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
 C:\Users\mjsku\Desktop\RimWorldAlpha13Win\RimWorld1135Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp.dll
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\UnityEngine.dll
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\NAudio.dll
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\NVorbis.dll
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb

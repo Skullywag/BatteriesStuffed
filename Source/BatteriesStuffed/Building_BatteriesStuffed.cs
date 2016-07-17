@@ -59,7 +59,7 @@ namespace BatteriesStuffed
                 {
                     IntVec3 randomCell = this.OccupiedRect().RandomCell;
                     float radius = Rand.Range(0.5f, 1f) * 3f;
-                    GenExplosion.DoExplosion(randomCell, radius, DamageDefOf.Flame, null, null, null, null, null, 0f, false);
+                    GenExplosion.DoExplosion(randomCell, radius, DamageDefOf.Flame, null, null, null, null, null, 0f, 0, false, null, 0, 0);
                     base.GetComp<CompPowerBattery>().DrawPower(400f);
                 }
             }

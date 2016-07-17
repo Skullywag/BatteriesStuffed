@@ -19,6 +19,10 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+    <researchPrerequisites>
+      <li>Batteries</li>
+    </researchPrerequisites>
+    <blockWind>true</blockWind>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -30,7 +34,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
     </graphicData>
-    <altitudeLayer>BuildingTall</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
@@ -50,7 +54,7 @@
     </building>
     <costList>
       <Steel>50</Steel>
-      <Components>2</Components>
+      <Component>2</Component>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
@@ -65,7 +69,7 @@
     <designationCategory>Power</designationCategory>
     <staticSunShadowHeight>0.5</staticSunShadowHeight>
     <constructEffect>ConstructMetal</constructEffect>
-    <designationHotkey>B</designationHotkey>
+    <designationHotkey>Misc4</designationHotkey>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -77,7 +81,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
     </graphicData>
-    <altitudeLayer>BuildingTall</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
@@ -97,7 +101,7 @@
     </building>
     <costList>
       <Plasteel>50</Plasteel>
-      <Components>2</Components>
+      <Component>2</Component>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
@@ -123,7 +127,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
     </graphicData>
-    <altitudeLayer>BuildingTall</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
@@ -143,7 +147,7 @@
     </building>
     <costList>
       <Silver>50</Silver>
-      <Components>2</Components>
+      <Component>2</Component>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
@@ -169,7 +173,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
     </graphicData>
-    <altitudeLayer>BuildingTall</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
@@ -189,7 +193,7 @@
     </building>
     <costList>
       <Gold>50</Gold>
-      <Components>2</Components>
+      <Component>2</Component>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
@@ -215,7 +219,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
     </graphicData>
-    <altitudeLayer>BuildingTall</altitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <castEdgeShadows>true</castEdgeShadows>
@@ -235,7 +239,7 @@
     </building>
     <costList>
       <Uranium>50</Uranium>
-      <Components>2</Components>
+      <Component>2</Component>
     </costList>
     <comps>
       <li Class="CompProperties_Battery">
