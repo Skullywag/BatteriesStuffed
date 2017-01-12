@@ -11,18 +11,6 @@
     <repairEffect>Repair</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
-    <graphicData>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <researchPrerequisites>
-      <li>Batteries</li>
-    </researchPrerequisites>
-    <blockWind>true</blockWind>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -33,17 +21,25 @@
       <texPath>Things/Building/SteelBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
+    <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>800</WorkToMake>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>-18</Beauty>
     </statBases>
@@ -80,17 +76,25 @@
       <texPath>Things/Building/PlasteelBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
+    <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
-      <WorkToMake>800</WorkToMake>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>-10</Beauty>
     </statBases>
@@ -126,17 +130,25 @@
       <texPath>Things/Building/SilverBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
+    <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>125</MaxHitPoints>
-      <WorkToMake>800</WorkToMake>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>5</Beauty>
     </statBases>
@@ -172,17 +184,25 @@
       <texPath>Things/Building/GoldBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
+    <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
-      <WorkToMake>800</WorkToMake>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>10</Beauty>
     </statBases>
@@ -218,17 +238,25 @@
       <texPath>Things/Building/UraniumBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>1</fillPercent>
+    <fillPercent>0.40</fillPercent>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
-      <WorkToMake>800</WorkToMake>
+      <WorkToBuild>800</WorkToBuild>
+      <Mass>20</Mass>
       <Flammability>0</Flammability>
       <Beauty>-20</Beauty>
     </statBases>

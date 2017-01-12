@@ -5,6 +5,7 @@ using Verse.Sound;
 using RimWorld;
 namespace BatteriesStuffed
 {
+    [StaticConstructorOnStartup]
     public class Building_StuffedBattery : Building
     {
         private const float MinEnergyToExplode = 500f;
@@ -36,11 +37,12 @@ namespace BatteriesStuffed
             rotation.Rotate(RotationDirection.Clockwise);
             r.rotation = rotation;
             GenDraw.DrawFillableBar(r);
-            if (this.ticksToExplode > 0)
+            if (this.ticksToExplode > 0 && base.Spawned)
             {
-                OverlayDrawer.DrawOverlay(this, OverlayTypes.BurningWick);
+                base.Map.overlayDrawer.DrawOverlay(this, OverlayTypes.BurningWick);
             }
         }
+
         public override void Tick()
         {
             base.Tick();
@@ -59,15 +61,15 @@ namespace BatteriesStuffed
                 {
                     IntVec3 randomCell = this.OccupiedRect().RandomCell;
                     float radius = Rand.Range(0.5f, 1f) * 3f;
-                    GenExplosion.DoExplosion(randomCell, radius, DamageDefOf.Flame, null, null, null, null, null, 0f, 0, false, null, 0, 0);
+                    GenExplosion.DoExplosion(randomCell, base.Map, radius, DamageDefOf.Flame, null, null, null, null, null, 0f, 1, false, null, 0f, 1);
                     base.GetComp<CompPowerBattery>().DrawPower(400f);
                 }
             }
         }
 
-        public void StartWickSustainer()
+        private void StartWickSustainer()
         {
-            SoundInfo info = SoundInfo.InWorld(this, MaintenanceType.PerTick);
+            SoundInfo info = SoundInfo.InMap(this, MaintenanceType.PerTick);
             this.wickSustainer = SoundDefOf.HissSmall.TrySpawnSustainer(info);
         }
 

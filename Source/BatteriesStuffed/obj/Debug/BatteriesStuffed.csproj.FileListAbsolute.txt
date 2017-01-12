@@ -48,3 +48,34 @@ C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\Batteries
 C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
 C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
 C:\Users\mjsku\Desktop\RimWorld1232WinDev\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\UnityEngine.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\NAudio.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\NVorbis.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\bin\Debug\UnityEngine.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\bin\Debug\NAudio.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\bin\Debug\NVorbis.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha15cWin\RimWorld1284Win\Mods\BatteriesStuffed - A15c\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\bin\Debug\UnityEngine.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\bin\Debug\NAudio.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\bin\Debug\NVorbis.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\bin\Debug\UnityEngine.xml
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
