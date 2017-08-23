@@ -19,7 +19,7 @@ namespace BatteriesStuffed
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.LookValue<int>(ref this.ticksToExplode, "ticksToExplode", 0, false);
+            Scribe_Values.Look<int>(ref this.ticksToExplode, "ticksToExplode", 0, false);
         }
 
         public override void Draw()

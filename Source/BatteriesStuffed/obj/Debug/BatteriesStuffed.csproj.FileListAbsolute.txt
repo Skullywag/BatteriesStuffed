@@ -79,3 +79,14 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-A16\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\UnityEngine.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\NAudio.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\NVorbis.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\bin\Debug\UnityEngine.xml
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+C:\Users\mjsku\Desktop\RimWorldAlpha17bWin\RimWorld1557Win\Mods\BatteriesStuffed\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb

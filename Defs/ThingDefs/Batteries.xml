@@ -14,61 +14,6 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>Battery</defName>
-    <label>steel battery</label>
-    <thingClass>Building_Battery</thingClass>
-    <graphicData>
-      <texPath>Things/Building/SteelBattery</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,2)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.40</fillPercent>
-    <tickerType>Normal</tickerType>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>800</WorkToBuild>
-      <Mass>20</Mass>
-      <Flammability>1.0</Flammability>
-      <Beauty>-18</Beauty>
-    </statBases>
-    <description>Stores electricity when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when heated or wet.</description>
-    <size>(1,2)</size>
-    <building>
-      <ignoreNeedsPower>true</ignoreNeedsPower>
-    </building>
-    <costList>
-      <Steel>50</Steel>
-      <Component>2</Component>
-    </costList>
-    <comps>
-      <li Class="CompProperties_Battery">
-        <storedEnergyMax>1000</storedEnergyMax>
-        <efficiency>0.5</efficiency>
-        <startElectricalFires>true</startElectricalFires>
-        <transmitsPower>true</transmitsPower>
-      </li>
-      <li Class="CompProperties_Breakdownable"/>
-    </comps>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
-    <designationHotkey>Misc4</designationHotkey>
-  </ThingDef>
-
-  <ThingDef ParentName="BuildingBase">
     <defName>PlasteelBattery</defName>
     <label>plasteel battery</label>
     <thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
