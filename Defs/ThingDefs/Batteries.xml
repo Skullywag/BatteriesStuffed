@@ -7,10 +7,25 @@
     <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <repairEffect>Repair</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.40</fillPercent>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <size>(1,2)</size>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.5</staticSunShadowHeight>
+    <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -28,14 +43,6 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.40</fillPercent>
-    <tickerType>Normal</tickerType>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
       <WorkToBuild>800</WorkToBuild>
@@ -44,10 +51,6 @@
       <Beauty>-10</Beauty>
     </statBases>
     <description>Stores electricity when there is excess power and yields it when there is not. Made of very stable material so does not explode.</description>
-    <size>(1,2)</size>
-    <building>
-      <ignoreNeedsPower>true</ignoreNeedsPower>
-    </building>
     <costList>
       <Plasteel>50</Plasteel>
       <Component>2</Component>
@@ -61,10 +64,6 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
@@ -82,14 +81,6 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.40</fillPercent>
-    <tickerType>Normal</tickerType>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>125</MaxHitPoints>
       <WorkToBuild>800</WorkToBuild>
@@ -98,10 +89,6 @@
       <Beauty>5</Beauty>
     </statBases>
     <description>Stores electricity when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when heated or wet.</description>
-    <size>(1,2)</size>
-    <building>
-      <ignoreNeedsPower>true</ignoreNeedsPower>
-    </building>
     <costList>
       <Silver>50</Silver>
       <Component>2</Component>
@@ -115,10 +102,6 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -136,14 +119,6 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.40</fillPercent>
-    <tickerType>Normal</tickerType>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <WorkToBuild>800</WorkToBuild>
@@ -152,10 +127,6 @@
       <Beauty>10</Beauty>
     </statBases>
     <description>Stores electricity when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when heated or wet.</description>
-    <size>(1,2)</size>
-    <building>
-      <ignoreNeedsPower>true</ignoreNeedsPower>
-    </building>
     <costList>
       <Gold>50</Gold>
       <Component>2</Component>
@@ -169,10 +140,6 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -190,14 +157,6 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <blockWind>true</blockWind>
-    <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.40</fillPercent>
-    <tickerType>Normal</tickerType>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToBuild>800</WorkToBuild>
@@ -206,10 +165,6 @@
       <Beauty>-20</Beauty>
     </statBases>
     <description>Stores electricity when there is excess power and yields it when there is not. Made of a non flammable material so doesnt explode.</description>
-    <size>(1,2)</size>
-    <building>
-      <ignoreNeedsPower>true</ignoreNeedsPower>
-    </building>
     <costList>
       <Uranium>50</Uranium>
       <Component>2</Component>
@@ -223,10 +178,6 @@
       </li>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Power</designationCategory>
-    <staticSunShadowHeight>0.5</staticSunShadowHeight>
-    <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
 
 </Buildings>
