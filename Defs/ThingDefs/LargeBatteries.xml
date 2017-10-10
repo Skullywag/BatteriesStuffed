@@ -31,7 +31,7 @@
   <ThingDef ParentName="BuildingBaseLarge">
     <defName>LargeSteelBattery</defName>
     <label>large steel battery</label>
-    <thingClass>Building_Battery</thingClass>
+    <thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
     <graphicData>
       <texPath>Things/Building/LargeSteelBattery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -128,7 +128,7 @@
     </statBases>
     <description>Stores electricity when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when heated or wet.</description>
     <costList>
-      <Silver>155</Silver>
+      <Silver>1550</Silver>
       <Component>3</Component>
     </costList>
     <comps>
@@ -166,7 +166,7 @@
     </statBases>
     <description>Stores electricity when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when heated or wet.</description>
     <costList>
-      <Gold>155</Gold>
+      <Gold>1550</Gold>
       <Component>3</Component>
     </costList>
     <comps>
@@ -204,7 +204,7 @@
     </statBases>
     <description>Stores electricity when there is excess power and yields it when there is not. Made of a non flammable material so doesnt explode.</description>
     <costList>
-      <Uranium>155</Uranium>
+      <Uranium>1550</Uranium>
       <Component>3</Component>
     </costList>
     <comps>
