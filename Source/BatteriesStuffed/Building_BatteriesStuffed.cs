@@ -75,7 +75,7 @@ namespace BatteriesStuffed
 
         public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
-            if (this.def.defName != "PlasteelBattery" || this.def.defName != "UraniumBattery")
+            if (this.def.defName != "PlasteelBattery" || this.def.defName != "UraniumBattery" || this.def.defName != "LargePlasteelBattery" || this.def.defName != "LargeUraniumBattery")
             {
                 if (!base.Destroyed && this.ticksToExplode == 0 && dinfo.Def == DamageDefOf.Flame && Rand.Value < 0.05f && base.GetComp<CompPowerBattery>().StoredEnergy > 500f)
                 {
