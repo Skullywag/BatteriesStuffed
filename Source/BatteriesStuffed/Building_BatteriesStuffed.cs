@@ -8,13 +8,13 @@ namespace BatteriesStuffed
     [StaticConstructorOnStartup]
     public class Building_StuffedBattery : Building
     {
-        private const float MinEnergyToExplode = 500f;
-		private const float EnergyToLoseWhenExplode = 400f;
-		private const float ExplodeChancePerDamage = 0.05f;
-		private int ticksToExplode;
+        private const float MinEnergyToExplode = 500f; //40% of battery capacity
+		private const float EnergyToLoseWhenExplode = 400f; //35% of current energy
+		private const float ExplodeChancePerDamage = 0.05f; // Should begin to risk exploding at 75% health, each damage after that should have 20% chance of lighting the wick code.
+		private int ticksToExplode; // Batteries will have 2-3 seconds before exploding, can add this as an option in my extended comps however. Two layer explosion, small range fire large range EMP.
 		private Sustainer wickSustainer;
 		private static readonly Vector2 BarSize = new Vector2(1.3f, 0.4f);
-		private static readonly Vector2 LargeBarSize = new Vector2(2.275f, 0.7f);
+		private static readonly Vector2 LargeBarSize = new Vector2(2.275f, 0.7f); // No longer needed once the XMLs handle bar size, possibly the same for above and below.
 		private static readonly Material BarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.9f, 0.85f, 0.2f));
 		private static readonly Material BarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.3f, 0.3f, 0.3f));
         public override void ExposeData()
@@ -69,7 +69,7 @@ namespace BatteriesStuffed
                 {
                     IntVec3 randomCell = this.OccupiedRect().RandomCell;
                     float radius = Rand.Range(0.5f, 1f) * 3f;
-                    GenExplosion.DoExplosion(randomCell, base.Map, radius, DamageDefOf.Flame, null, null, null, null, null, 0f, 1, false, null, 0f, 1);
+                    GenExplosion.DoExplosion(randomCell, base.Map, radius, DamageDefOf.Flame, null, -1, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
                     base.GetComp<CompPowerBattery>().DrawPower(400f);
                 }
             }

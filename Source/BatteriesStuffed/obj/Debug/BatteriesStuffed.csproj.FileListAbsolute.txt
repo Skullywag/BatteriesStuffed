@@ -1,0 +1,13 @@
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\UnityEngine.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\TextMeshPro-1.0.55.56.0b11.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\Assembly-CSharp-firstpass.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\NAudio.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\NVorbis.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\bin\Debug\UnityEngine.UI.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojResolveAssemblyReference.cache
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csproj.CoreCompileInputs.cache
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb

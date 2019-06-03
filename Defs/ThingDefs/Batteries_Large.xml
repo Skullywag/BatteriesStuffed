@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="LargeBatteryBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass> <!--Graphic_Multi-->
+			<drawSize>(2,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.40</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<size>(2,3)</size>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>BigBatteries</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_BatteryBar">
+				<barSize>(2.275, 0.7)</barSize>
+				<barFilledColor>(0.9, 0.85, 0.2)</barFilledColor>
+				<barUnfilledColor>(0.3, 0.3, 0.3)</barUnfilledColor>
+				<barMargin>0.15</barMargin>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="LargeBatteryBase">
+		<defName>LargeUraniumBattery</defName>
+		<label>large uranium battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Made of a non flammable material so doesnt explode.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/UraniumBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>675</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Mass>80</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<costList>
+			<Uranium>1500</Uranium>
+			<Component>3</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>2835</storedEnergyMax>
+				<efficiency>0.8</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ExtendedBattery">
+				<idlePowerDrainWatts>0</idlePowerDrainWatts>
+				<canShortCircuit>true</canShortCircuit>
+				<fireExplodeSize>1</fireExplodeSize>
+				<concusiveExplodeSize>2</concusiveExplodeSize>
+				<empExplodeSize>12</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="LargeBatteryBase">
+		<defName>LargePlasteelBattery</defName>
+		<label>large plasteel battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Made of very stable material so does not explode.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/PlasteelBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>750</MaxHitPoints>
+			<WorkToBuild>4500</WorkToBuild>
+			<Mass>90</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-7</Beauty>
+		</statBases>
+		<costList>
+			<Plasteel>210</Plasteel>
+			<Component>3</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>810</storedEnergyMax>
+				<efficiency>0.9</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ExtendedBattery">
+				<idlePowerDrainWatts>2</idlePowerDrainWatts>
+				<canShortCircuit>false</canShortCircuit>
+				<concusiveExplodeSize>1</concusiveExplodeSize>
+				<empExplodeSize>6</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="LargeBatteryBase">
+		<defName>LargeGoldBattery</defName>
+		<label>large gold battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/GoldBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<WorkToBuild>3450</WorkToBuild>
+			<Mass>60</Mass>
+			<Flammability>0.6</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Gold>1500</Gold>
+			<Component>4</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>3308</storedEnergyMax>
+				<efficiency>1.0</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ExtendedBattery">
+				<idlePowerDrainWatts>1</idlePowerDrainWatts>
+				<canShortCircuit>true</canShortCircuit>
+				<fireExplodeSize>2</fireExplodeSize>
+				<concusiveExplodeSize>3</concusiveExplodeSize>
+				<empExplodeSize>15</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LargeBatteryBase">
+		<defName>LargeSilverBattery</defName>
+		<label>large silver battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SilverBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>375</MaxHitPoints>
+			<WorkToBuild>2700</WorkToBuild>
+			<Mass>60</Mass>
+			<Flammability>0.7</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<costList>
+			<Silver>1500</Silver>
+			<Component>3</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>2363</storedEnergyMax>
+				<efficiency>0.65</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ExtendedBattery">
+				<idlePowerDrainWatts>2</idlePowerDrainWatts>
+				<canShortCircuit>true</canShortCircuit>
+				<fireExplodeSize>2</fireExplodeSize>
+				<concusiveExplodeSize>3</concusiveExplodeSize>
+				<empExplodeSize>15</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LargeBatteryBase">
+		<defName>LargeSteelBattery</defName>
+		<label>large steel battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SilverBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>2400</WorkToBuild>
+			<Mass>60</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-18</Beauty>
+		</statBases>
+		<costList>
+			<Steel>210</Steel>
+			<Component>3</Component>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>1890</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_ExtendedBattery">
+				<idlePowerDrainWatts>5</idlePowerDrainWatts>
+				<canShortCircuit>true</canShortCircuit>
+				<fireExplodeSize>3</fireExplodeSize>
+				<concusiveExplodeSize>3.5</concusiveExplodeSize>
+				<empExplodeSize>17</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
