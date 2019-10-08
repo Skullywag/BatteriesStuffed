@@ -14,12 +14,12 @@
 		</graphicData>
 		<category>Building</category>
 		<thingClass>Building</thingClass>
-		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 		<selectable>true</selectable>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<repairEffect>Repair</repairEffect>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-		<filthLeaving>BuildingRubble</filthLeaving>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
 		<pathCost>70</pathCost>
@@ -40,14 +40,14 @@
 		<researchPrerequisites>
 			<li>BigBatteries</li>
 		</researchPrerequisites>
-		<comps>
+		<!--<comps>
 			<li Class="CompProperties_BatteryBar">
 				<barSize>(2.275, 0.7)</barSize>
 				<barFilledColor>(0.9, 0.85, 0.2)</barFilledColor>
 				<barUnfilledColor>(0.3, 0.3, 0.3)</barUnfilledColor>
 				<barMargin>0.15</barMargin>
 			</li>
-		</comps>
+		</comps>-->
 	</ThingDef>
 
 	<ThingDef ParentName="LargeBatteryBase">
@@ -66,8 +66,8 @@
 			<Beauty>-12</Beauty>
 		</statBases>
 		<costList>
-			<Uranium>1500</Uranium>
-			<Component>3</Component>
+			<Uranium>210</Uranium>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Breakdownable"/>
@@ -77,13 +77,13 @@
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_ExtendedBattery">
+			<!--<li Class="CompProperties_ExtendedBattery">
 				<idlePowerDrainWatts>0</idlePowerDrainWatts>
 				<canShortCircuit>true</canShortCircuit>
 				<fireExplodeSize>1</fireExplodeSize>
 				<concusiveExplodeSize>2</concusiveExplodeSize>
 				<empExplodeSize>12</empExplodeSize>
-			</li>
+			</li>-->
 		</comps>
 	</ThingDef>
 
@@ -104,7 +104,7 @@
 		</statBases>
 		<costList>
 			<Plasteel>210</Plasteel>
-			<Component>3</Component>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Battery">
@@ -113,12 +113,12 @@
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_ExtendedBattery">
+			<!--<li Class="CompProperties_ExtendedBattery">
 				<idlePowerDrainWatts>2</idlePowerDrainWatts>
 				<canShortCircuit>false</canShortCircuit>
 				<concusiveExplodeSize>1</concusiveExplodeSize>
 				<empExplodeSize>6</empExplodeSize>
-			</li>
+			</li>-->
 		</comps>
 	</ThingDef>
 
@@ -138,8 +138,9 @@
 			<Beauty>10</Beauty>
 		</statBases>
 		<costList>
-			<Gold>1500</Gold>
-			<Component>4</Component>
+			<Steel>180</Steel>
+			<Gold>360</Gold>
+			<ComponentIndustrial>4</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Breakdownable"/>
@@ -149,13 +150,13 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_ExtendedBattery">
+			<!--<li Class="CompProperties_ExtendedBattery">
 				<idlePowerDrainWatts>1</idlePowerDrainWatts>
 				<canShortCircuit>true</canShortCircuit>
 				<fireExplodeSize>2</fireExplodeSize>
 				<concusiveExplodeSize>3</concusiveExplodeSize>
 				<empExplodeSize>15</empExplodeSize>
-			</li>
+			</li>-->
 		</comps>
 	</ThingDef>
 	
@@ -175,8 +176,9 @@
 			<Beauty>5</Beauty>
 		</statBases>
 		<costList>
-			<Silver>1500</Silver>
-			<Component>3</Component>
+			<Steel>180</Steel>
+			<Silver>360</Silver>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Breakdownable"/>
@@ -186,13 +188,13 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_ExtendedBattery">
+			<!--<li Class="CompProperties_ExtendedBattery">
 				<idlePowerDrainWatts>2</idlePowerDrainWatts>
 				<canShortCircuit>true</canShortCircuit>
 				<fireExplodeSize>2</fireExplodeSize>
 				<concusiveExplodeSize>3</concusiveExplodeSize>
 				<empExplodeSize>15</empExplodeSize>
-			</li>
+			</li>-->
 		</comps>
 	</ThingDef>
 	
@@ -202,7 +204,7 @@
 		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
-			<texPath>Things/Building/SilverBattery</texPath>
+			<texPath>Things/Building/SteelBattery</texPath>
 		</graphicData>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
@@ -213,7 +215,7 @@
 		</statBases>
 		<costList>
 			<Steel>210</Steel>
-			<Component>3</Component>
+			<ComponentIndustrial>3</ComponentIndustrial>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Breakdownable"/>
@@ -223,13 +225,13 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<li Class="CompProperties_ExtendedBattery">
+			<!--<li Class="CompProperties_ExtendedBattery">
 				<idlePowerDrainWatts>5</idlePowerDrainWatts>
 				<canShortCircuit>true</canShortCircuit>
 				<fireExplodeSize>3</fireExplodeSize>
 				<concusiveExplodeSize>3.5</concusiveExplodeSize>
 				<empExplodeSize>17</empExplodeSize>
-			</li>
+			</li>-->
 		</comps>
 	</ThingDef>
 
