@@ -11,3 +11,9 @@ F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\Batteries
 F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csproj.CoreCompileInputs.cache
 F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
 F:\Steam\steamapps\common\RimWorld\Mods\BatteriesStuffed-master\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb
+C:\Users\maxim\Desktop\batters\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.dll
+C:\Users\maxim\Desktop\batters\Source\BatteriesStuffed\bin\Debug\BatteriesStuffed.pdb
+C:\Users\maxim\Desktop\batters\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csprojAssemblyReference.cache
+C:\Users\maxim\Desktop\batters\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.csproj.CoreCompileInputs.cache
+C:\Users\maxim\Desktop\batters\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.dll
+C:\Users\maxim\Desktop\batters\Source\BatteriesStuffed\obj\Debug\BatteriesStuffed.pdb

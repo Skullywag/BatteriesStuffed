@@ -13,10 +13,36 @@ namespace BatteriesStuffed
 		private const float ExplodeChancePerDamage = 0.05f; // Should begin to risk exploding at 75% health, each damage after that should have 20% chance of lighting the wick code.
 		private int ticksToExplode; // Batteries will have 2-3 seconds before exploding, can add this as an option in my extended comps however. Two layer explosion, small range fire large range EMP.
 		private Sustainer wickSustainer;
-		private static readonly Vector2 BarSize = new Vector2(1.3f, 0.4f);
-		private static readonly Vector2 LargeBarSize = new Vector2(2.275f, 0.7f); // No longer needed once the XMLs handle bar size, possibly the same for above and below.
-		private static readonly Material BarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.9f, 0.85f, 0.2f));
-		private static readonly Material BarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.3f, 0.3f, 0.3f));
+        private Material BarFilledMat;
+        private Material BarUnfilledMat;
+
+        public CompProperties_ExtendedBattery Props => this.GetComp<Comp_ExtendedBattery>().Props;
+
+        private Material BarFilled
+        {
+            get
+            {
+                if (BarFilledMat == null)
+                {
+                    BarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(Props.barFilledColor);
+                }
+                return BarFilledMat;
+            }
+        }
+
+        private Material BarUnfilled
+        {
+            get
+            {
+                if (BarUnfilledMat == null)
+                {
+                    BarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(Props.barUnfilledColor);
+                }
+                return BarUnfilledMat;
+            }
+        }
+
+
         public override void ExposeData()
         {
             base.ExposeData();
@@ -29,7 +55,9 @@ namespace BatteriesStuffed
             CompPowerBattery comp = base.GetComp<CompPowerBattery>();
             GenDraw.FillableBarRequest r = default(GenDraw.FillableBarRequest);
             r.center = this.DrawPos + Vector3.up * 0.1f;
-            if (this.def.defName == "LargePlasteelBattery" || this.def.defName == "LargeSteelBattery" || this.def.defName == "LargeGoldBattery" || this.def.defName == "LargeSilverBattery" || this.def.defName == "LargeUraniumBattery")
+            r.size = Props.barSize;
+            /* Obsolete
+             if (this.def.defName == "LargePlasteelBattery" || this.def.defName == "LargeSteelBattery" || this.def.defName == "LargeGoldBattery" || this.def.defName == "LargeSilverBattery" || this.def.defName == "LargeUraniumBattery")
                 {
                     r.size = Building_StuffedBattery.LargeBarSize;
                 }
@@ -37,10 +65,11 @@ namespace BatteriesStuffed
                 {
                     r.size = Building_StuffedBattery.BarSize;
                 }
+            */
             r.fillPercent = comp.StoredEnergy / comp.Props.storedEnergyMax;
-            r.filledMat = Building_StuffedBattery.BarFilledMat;
-            r.unfilledMat = Building_StuffedBattery.BarUnfilledMat;
-            r.margin = 0.15f;
+            r.filledMat = BarFilled;
+            r.unfilledMat = BarUnfilled;
+            r.margin = Props.barMargin;
             Rot4 rotation = base.Rotation;
             rotation.Rotate(RotationDirection.Clockwise);
             r.rotation = rotation;
@@ -67,12 +96,18 @@ namespace BatteriesStuffed
                 this.ticksToExplode--;
                 if (this.ticksToExplode == 0)
                 {
-                    IntVec3 randomCell = this.OccupiedRect().RandomCell;
-                    float radius = Rand.Range(0.5f, 1f) * 3f;
-                    GenExplosion.DoExplosion(randomCell, base.Map, radius, DamageDefOf.Flame, null, -1, null, null, null, null, 0f, 1, false, null, 0f, 1, 0f, false);
+                    TryExplode();
                     base.GetComp<CompPowerBattery>().DrawPower(400f);
                 }
             }
+        }
+
+        private void TryExplode()
+        {
+            if (!Props.canExplode) return;
+            IntVec3 randomCell = this.OccupiedRect().RandomCell;
+            GenExplosion.DoExplosion(randomCell, Map, Props.fireExplodeSize, DamageDefOf.Flame, this);
+            GenExplosion.DoExplosion(randomCell, Map, Props.empExplodeSize, DamageDefOf.EMP, this);
         }
 
         private void StartWickSustainer()
@@ -83,7 +118,8 @@ namespace BatteriesStuffed
 
         public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)
         {
-        	if (this.def.defName != "PlasteelBattery" || this.def.defName != "UraniumBattery" || this.def.defName != "LargePlasteelBattery" || this.def.defName != "LargeUraniumBattery")
+            //if (this.def.defName != "PlasteelBattery" || this.def.defName != "UraniumBattery" || this.def.defName != "LargePlasteelBattery" || this.def.defName != "LargeUraniumBattery")
+            if(Props.canExplode)
             {
                 if (!base.Destroyed && this.ticksToExplode == 0 && dinfo.Def == DamageDefOf.Flame && Rand.Value < 0.05f && base.GetComp<CompPowerBattery>().StoredEnergy > 500f)
                 {
