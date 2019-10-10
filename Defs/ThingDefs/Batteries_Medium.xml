@@ -40,14 +40,14 @@
 		<researchPrerequisites>
 			<li>Batteries</li>
 		</researchPrerequisites>
-		<!--<comps>
-			<li Class="CompProperties_BatteryBar">
+		<comps>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
 				<barSize>(1.3, 0.4)</barSize>
 				<barFilledColor>(0.9, 0.85, 0.2)</barFilledColor>
 				<barUnfilledColor>(0.3, 0.3, 0.3)</barUnfilledColor>
 				<barMargin>0.15</barMargin>
 			</li>
-		</comps>-->
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="MediumBatteryBase">
@@ -77,10 +77,13 @@
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<!--<li Class="CompProperties_ExtendedBattery">
-				<idlePowerDrainWatts>0</idlePowerDrainWatts>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>0</idlePowerDrainWatts>-->
 				<canShortCircuit>true</canShortCircuit>
-			</li>-->
+				<canExplode>false</canExplode>
+				<fireExplodeSize>2</fireExplodeSize>
+				<empExplodeSize>8</empExplodeSize>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -110,10 +113,13 @@
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<!--<li Class="CompProperties_ExtendedBattery">
-				<idlePowerDrainWatts>2</idlePowerDrainWatts>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>2</idlePowerDrainWatts>-->
 				<canShortCircuit>false</canShortCircuit>
-			</li>-->
+				<canExplode>false</canExplode>
+				<fireExplodeSize>2</fireExplodeSize>
+				<empExplodeSize>8</empExplodeSize>
+			</li>
 		</comps>
 	</ThingDef>
 
@@ -145,13 +151,13 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<!--<li Class="CompProperties_ExtendedBattery">
-				<canExplode>true</canExplode>
-				<idlePowerDrainWatts>1</idlePowerDrainWatts>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>1</idlePowerDrainWatts>-->
 				<canShortCircuit>true</canShortCircuit>
+				<canExplode>true</canExplode>
 				<fireExplodeSize>1</fireExplodeSize>
 				<empExplodeSize>6</empExplodeSize>
-			</li>-->
+			</li>
 		</comps>
 	</ThingDef>
 	
@@ -183,13 +189,13 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<!--<li Class="CompProperties_ExtendedBattery">
-				<canExplode>true</canExplode>
-				<idlePowerDrainWatts>2</idlePowerDrainWatts>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>2</idlePowerDrainWatts>-->
 				<canShortCircuit>true</canShortCircuit>
+				<canExplode>true</canExplode>
 				<fireExplodeSize>1</fireExplodeSize>
 				<empExplodeSize>6</empExplodeSize>
-			</li>-->
+			</li>
 		</comps>
 	</ThingDef>
 	
@@ -220,13 +226,13 @@
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
-			<!--<li Class="CompProperties_ExtendedBattery">
-				<canExplode>true</canExplode>
-				<idlePowerDrainWatts>5</idlePowerDrainWatts>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>5</idlePowerDrainWatts>-->
 				<canShortCircuit>true</canShortCircuit>
+				<canExplode>true</canExplode>
 				<fireExplodeSize>2</fireExplodeSize>
 				<empExplodeSize>8</empExplodeSize>
-			</li>-->
+			</li>
 		</comps>
 	</ThingDef>
 

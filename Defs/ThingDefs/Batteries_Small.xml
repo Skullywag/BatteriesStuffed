@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="SmallBatteryBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass> <!--Graphic_Multi-->
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<category>Building</category>
+		<thingClass>Building</thingClass>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.40</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<size>(1,1)</size>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>Batteries</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<barSize>(0.60, 0.35)</barSize>
+				<barFilledColor>(0.9, 0.85, 0.2)</barFilledColor>
+				<barUnfilledColor>(0.3, 0.3, 0.3)</barUnfilledColor>
+				<barMargin>0.15</barMargin>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SmallBatteryBase">
+		<defName>SmallUraniumBattery</defName>
+		<label>small uranium battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Made of a non flammable material so doesnt explode.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SmallUraniumBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>112</MaxHitPoints>
+			<WorkToBuild>675</WorkToBuild>
+			<Mass>13</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-12</Beauty>
+		</statBases>
+		<costList>
+			<Uranium>35</Uranium>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>450</storedEnergyMax>
+				<efficiency>0.8</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>0</idlePowerDrainWatts>-->
+				<canShortCircuit>true</canShortCircuit>
+				<canExplode>false</canExplode>
+				<fireExplodeSize>1</fireExplodeSize>
+				<empExplodeSize>4</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SmallBatteryBase">
+		<defName>SmallPlasteelBattery</defName>
+		<label>small plasteel battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Made of very stable material so does not explode.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SmallPlasteelBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>125</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>15</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>-7</Beauty>
+		</statBases>
+		<costList>
+			<Plasteel>35</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>405</storedEnergyMax>
+				<efficiency>0.9</efficiency>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>2</idlePowerDrainWatts>-->
+				<canShortCircuit>false</canShortCircuit>
+				<canExplode>false</canExplode>
+				<fireExplodeSize>1</fireExplodeSize>
+				<empExplodeSize>4</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="SmallBatteryBase">
+		<defName>SmallGoldBattery</defName>
+		<label>small gold battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SmallGoldBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>575</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>0.6</Flammability>
+			<Beauty>10</Beauty>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<Gold>60</Gold>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>525</storedEnergyMax>
+				<efficiency>1.0</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>1</idlePowerDrainWatts>-->
+				<canShortCircuit>true</canShortCircuit>
+				<canExplode>true</canExplode>
+				<fireExplodeSize>0.5</fireExplodeSize>
+				<empExplodeSize>3</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="SmallBatteryBase">
+		<defName>SmallSilverBattery</defName>
+		<label>small silver battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SmallSilverBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>62</MaxHitPoints>
+			<WorkToBuild>450</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>0.7</Flammability>
+			<Beauty>5</Beauty>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<Silver>60</Silver>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>375</storedEnergyMax>
+				<efficiency>0.65</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>2</idlePowerDrainWatts>-->
+				<canShortCircuit>true</canShortCircuit>
+				<canExplode>true</canExplode>
+				<fireExplodeSize>0.5</fireExplodeSize>
+				<empExplodeSize>3</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="SmallBatteryBase">
+		<defName>SmallBattery</defName>
+		<label>small steel battery</label>
+		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
+		<graphicData>
+			<texPath>Things/Building/SmallSteelBattery</texPath>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>
+		<costList>
+			<Steel>35</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Battery">
+				<storedEnergyMax>300</storedEnergyMax>
+				<efficiency>0.5</efficiency>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="BatteriesStuffed.CompProperties_ExtendedBattery">
+				<!--<idlePowerDrainWatts>5</idlePowerDrainWatts>-->
+				<canShortCircuit>true</canShortCircuit>
+				<canExplode>true</canExplode>
+				<fireExplodeSize>1</fireExplodeSize>
+				<empExplodeSize>4</empExplodeSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
