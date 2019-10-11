@@ -53,7 +53,7 @@
 	<ThingDef ParentName="LargeBatteryBase">
 		<defName>LargeUraniumBattery</defName>
 		<label>large uranium battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Made of a non flammable material so doesnt explode.</description>
+		<description>This battery stores 2970 watthours of power and is 80% efficient, will NOT explode in the rain or when damaged and is not protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/UraniumBattery</texPath>
@@ -72,7 +72,7 @@
 		<comps>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Battery">
-				<storedEnergyMax>2835</storedEnergyMax>
+				<storedEnergyMax>2970</storedEnergyMax>
 				<efficiency>0.8</efficiency>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
@@ -91,7 +91,7 @@
 	<ThingDef ParentName="LargeBatteryBase">
 		<defName>LargePlasteelBattery</defName>
 		<label>large plasteel battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Made of very stable material so does not explode.</description>
+		<description>This battery stores 2673 watthours of power and is 90% efficient, will NOT explode in the rain or when damaged and is protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/PlasteelBattery</texPath>
@@ -109,7 +109,7 @@
 		</costList>
 		<comps>
 			<li Class="CompProperties_Battery">
-				<storedEnergyMax>810</storedEnergyMax>
+				<storedEnergyMax>2673</storedEnergyMax>
 				<efficiency>0.9</efficiency>
 				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
@@ -128,7 +128,7 @@
 	<ThingDef ParentName="LargeBatteryBase">
 		<defName>LargeGoldBattery</defName>
 		<label>large gold battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<description>This battery stores 3465 watthours of power and is 100% efficient, will explode in the rain and when damaged and is not protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/GoldBattery</texPath>
@@ -148,7 +148,7 @@
 		<comps>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Battery">
-				<storedEnergyMax>3308</storedEnergyMax>
+				<storedEnergyMax>3465</storedEnergyMax>
 				<efficiency>1.0</efficiency>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
@@ -167,7 +167,7 @@
 	<ThingDef ParentName="LargeBatteryBase">
 		<defName>LargeSilverBattery</defName>
 		<label>large silver battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<description>This battery stores 2475 watthours of power and is 65% efficient, will explode in the rain and when damaged and is not protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SilverBattery</texPath>
@@ -187,7 +187,7 @@
 		<comps>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Battery">
-				<storedEnergyMax>2363</storedEnergyMax>
+				<storedEnergyMax>2475</storedEnergyMax>
 				<efficiency>0.65</efficiency>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
@@ -206,7 +206,7 @@
 	<ThingDef ParentName="LargeBatteryBase">
 		<defName>LargeSteelBattery</defName>
 		<label>large steel battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<description>This battery stores 1980 watthours of power and is 50% efficient, will explode in the rain and when damaged and is not protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SteelBattery</texPath>
@@ -225,7 +225,7 @@
 		<comps>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Battery">
-				<storedEnergyMax>1890</storedEnergyMax>
+				<storedEnergyMax>1980</storedEnergyMax>
 				<efficiency>0.5</efficiency>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>

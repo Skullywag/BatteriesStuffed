@@ -53,7 +53,7 @@
 	<ThingDef ParentName="MediumBatteryBase">
 		<defName>UraniumBattery</defName>
 		<label>uranium battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Made of a non flammable material so doesnt explode.</description>
+		<description>This battery stores 900 watthours of power and is 80% efficient, will NOT explode in the rain or when damaged and is not protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/UraniumBattery</texPath>
@@ -90,7 +90,7 @@
 	<ThingDef ParentName="MediumBatteryBase">
 		<defName>PlasteelBattery</defName>
 		<label>plasteel battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Made of very stable material so does not explode.</description>
+		<description>This battery stores 810 watthours of power and is 90% efficient, will NOT explode in the rain or when damaged and is protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/PlasteelBattery</texPath>
@@ -126,7 +126,7 @@
 	<ThingDef ParentName="MediumBatteryBase">
 		<defName>GoldBattery</defName>
 		<label>gold battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<description>This battery stores 1050 watthours of power and is 100% efficient, will explode in the rain and when damaged and is not protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/GoldBattery</texPath>
@@ -164,7 +164,7 @@
 	<ThingDef ParentName="MediumBatteryBase">
 		<defName>SilverBattery</defName>
 		<label>silver battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<description>This battery stores 750 watthours of power and is 65% efficient, will explode in the rain and when damaged and is not protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SilverBattery</texPath>
@@ -202,7 +202,7 @@
 	<ThingDef ParentName="MediumBatteryBase">
 		<defName>Battery</defName>
 		<label>steel battery</label>
-		<description>Stores electricity when there is excess power and yields it when there is not. Warning - batteries tend to explode when heated or wet.</description>
+		<description>This battery stores 600 watthours of power and is 50% efficient, will explode in the rain and when damaged and is not protected against overloads.</description>
 		<thingClass>BatteriesStuffed.Building_StuffedBattery</thingClass>
 		<graphicData>
 			<texPath>Things/Building/SteelBattery</texPath>

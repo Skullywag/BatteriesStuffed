@@ -6,5 +6,20 @@
 	<supportedVersions>
 		<li>1.0</li>
 	</supportedVersions>
-	<description>Changes vanilla batteries so that they can be made with stuff, usuall resulting in a variable of different battery efficiencies and such. Also adds batteries of different sizes.</description>
+	<description>
+Changes vanilla batteries so that they can be made with stuff, usuall resulting in a variable of different battery efficiencies and such. Also adds batteries of different sizes.
+
+-----
+
+Small batteries are 1x1 cell in size, and have 45% the capacity of the medium battery.
+Medium batteries are 1x2 cells in size.
+Large batteries are 2x3 cells in size, and have 10% more capacity than 3 medium batteries of that type.
+
+-----
+
+Steel batteries function exactly like base game batteries, they explode in rain, have 50% efficiency.
+Silver batteries have an efficiency of 65%, and have 25% more capacity.
+Uranium batteries have an efficiency of 80%, are waterproof, do not explode when damaged, and have 50% more capacity.
+Plasteel batteries have an efficiency of 90%, are waterproof, immune to circuit overload, do not explode when damaged, and have 35% more capacity.
+Gold batteries have an efficiency of 100%, and have 75% more capacity.</description>
 </ModMetaData>
